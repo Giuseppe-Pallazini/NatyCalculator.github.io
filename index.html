@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <form>
+
+        <div class="inputs">
+            <div class="divInput" >
+                <p> Usuários </p>
+                <input type="number" class="inputClass" name="usuarios" id="usuarios">
+            </div>
+
+            <div class="divInput">
+                <p> WhatsApp's </p>
+                <input type="number" class="input" name="whatsapps">
+            </div>
+
+            <div class="divInput">
+                <p> Créditos</p>
+                <input type="number" class="input" name="creditos">
+            </div>
+        </div>
+
+        <div class="parceiro">
+            <p> Cliente parceiro? </p>
+            <input type="checkbox" name="checkbox">
+        </div>
+
+        <button joao="calc" class="button_calcular"> Calcular </button>
+        <p style="color: red; display: none;" name="error"> Error </p>
+
+    </form>
+
+    <script src="./calc.js"> </script>
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arial';
+
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+
+        .inputs {
+            width: 100%;
+
+            .divInput {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+            }
+        }
+
+        .parceiro {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .button_calcular {
+            background-color: blueviolet;
+            font-family: 'Arial';
+            font-weight: 800;
+            text-transform: uppercase;
+            color: white;
+            border: 0;
+            width: 100%;
+            padding: 20px 0;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="number"]::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+        }
+
+        input[type="number"] {
+            width: 100px;
+        }
+
+        input {
+            padding: 5px;
+            font-size: 16px;
+            background-color: #f0f0f0;
+            border: none;
+            outline: none;
+        }
+
+    }
+
+
+    .divProposta {
+
+        .valor_usuarios {
+            margin: 20px 0 0 0;
+        }
+        .valorDesconto_usuarios {
+            margin: 0;
+        }
+
+
+        .valor_whatsapps {
+            margin: 20px 0 0 0;
+        }
+        .valorDesconto_whatsapps {
+            margin: 0;
+        }
+
+
+        .valor_creditos {
+            margin: 20px 0 0 0;
+        }
+        .valorDesconto_creditos {
+            margin: 0;
+        }
+
+
+        .valor_total {
+            margin: 20px 0 0 0;
+        }
+        .valorDesconto_total {
+            margin: 0;
+        }
+    }
+}
