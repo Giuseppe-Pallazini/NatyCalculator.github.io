@@ -148,8 +148,6 @@ function calcValorEDescontoWhatsapps(value, temDesconto) {
 function calcCreditos() {
     qtdCreditosValue = Math.floor(qtdCreditosValue)
 
-
-
     if(!qtdCreditosValue) {
         throw new Error("Créditos Inválidos");
     }
@@ -193,7 +191,7 @@ function calcValorEDescontoCreditos(value) {
 
     if (clienteParceiroValue) { // É cliente dos parceiros, então tem desconto
         valorTotalCreditos = qtdCreditosValue * 0.03;
-        descontoCreditos = (qtdCreditosValue * value) - valorTotalCreditos;
+        descontoCreditos = ((qtdCreditosValue - 100) * value) - valorTotalCreditos;
     }
 
     else { // Não é cliente parceiro, então não tem desconto
@@ -238,7 +236,7 @@ function calcValorEDescontoCreditos(value) {
 
 
 function adicionarInfosNoHtml() {
-
+    debugger
     let valorTotal = valorTotalUsuarios + valorTotalWhatsapps + valorTotalCreditos + descontoUsuarios + descontoWhatsapp + descontoCreditos;
     valorTotal = Number(valorTotal);
 
